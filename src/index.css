@@ -14,7 +14,8 @@ html > body textarea,
 html > body pre,
 html > body button {
   font-family: "GmarketSansMedium";
-  color: #333;
+  color: rgb(255, 247, 222);
+  background-color: black;
   text-underline-position: under;
   line-height: 1.3;
 }
