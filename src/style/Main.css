@@ -1,0 +1,11 @@
+.app {
+  padding: 10px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #bf5160;
+  opacity: 0;
+}
