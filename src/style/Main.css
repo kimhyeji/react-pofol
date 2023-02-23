@@ -9,3 +9,35 @@
   background: #bf5160;
   opacity: 0;
 }
+
+#firstCircle {
+  background-color: yellow;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 2px solid blue;
+  margin-bottom: 1%;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+#secondCircle {
+  background-color: blue;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 2px solid yellow;
+  margin-bottom: 10%;
+}
+
+#thirdCircle {
+  background-color: black;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 2px solid yellow;
+  margin-bottom: 80%;
+}

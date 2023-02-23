@@ -10,7 +10,7 @@ import Project from "./pages/Project";
 export default function App() {
   return (
     <>
-      <FullPage
+      {/* <FullPage
         scrollMode={"full-page"}
         controls
         controlsProps={{ className: "slide-navigation" }}
@@ -24,18 +24,17 @@ export default function App() {
         <Slide className="section-area4">
           <AboutMe />
         </Slide>
-      </FullPage>
-
-      {/* <NavLink to="/main">Main</NavLink>
+      </FullPage> */}
+      <NavLink to="/main">Main</NavLink>
       <NavLink to="/aboutMe">AboutMe</NavLink>
-      <NavLink to="/project">Project</NavLink> */}
+      <NavLink to="/project">Project</NavLink>
 
-      {/* <Routes>
+      <Routes>
         <Route path="/aboutMe" element={<AboutMe />} />
         <Route path="/main" element={<Main />} />
         <Route path="/project" element={<Project />} />
         <Route path="*" element={<Navigate to="/main" />} />
-      </Routes> */}
+      </Routes>
     </>
   );
 }
