@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import greensocklogo from "./eximg.jpg";
+import greensocklogo from "./style/images/eximg.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -78,9 +78,7 @@ function GsapEx() {
         </div>
       </div>
       <div className="second">
-        <div className="logo-main">
-          <img src={greensocklogo} id="gsap-logo" alt="greensocklogo" />
-        </div>
+        <div className="logo-main">안녕</div>
       </div>
       <div className="third">
         <p>

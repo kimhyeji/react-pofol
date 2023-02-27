@@ -1,0 +1,53 @@
+.bs_line {
+  background-color: gray;
+  width: 1400px;
+  min-height: 100vh;
+  opacity: 0.3;
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* fullpage 시작 */
+.slide-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  padding-right: 5%;
+}
+
+.slide-navigation button:nth-child(1) {
+  display: none;
+}
+
+.slide-navigation button:nth-last-child(1) {
+  display: none;
+}
+
+.slide-navigation button {
+  background-color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 10px 0;
+  font-size: 0px;
+  cursor: pointer;
+}
+
+.slide-navigation {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0px;
+}
+
+.slide-navigation button:disabled {
+  background-color: rgb(255, 217, 0);
+  position: relative;
+}
+/* fullpage 끝 */

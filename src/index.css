@@ -11,6 +11,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ClimateCrisisKRVF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/ClimateCrisisKRVF.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html > body,
 html > body input,
 html > body select,
@@ -18,8 +26,8 @@ html > body textarea,
 html > body pre,
 html > body button {
   font-family: "GmarketSansMedium";
-  color: rgb(255, 247, 222);
-  background-color: rgb(148, 171, 185);
+  color: rgb(236, 230, 211);
+  background-color: #000;
   text-underline-position: under;
   line-height: 1.3;
 }
@@ -33,7 +41,7 @@ body,
 }
 
 /* 스크롤바 시작 */
-:root {
+/* :root {
   overflow-y: overlay;
 }
 
@@ -46,63 +54,8 @@ body,
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-}
-/* 스크롤바 끝 */
-
-/* fullpage 시작 */
-/* .section-area1 {
-  background: linear-gradient(rgb(0, 0, 0), rgb(17, 19, 42));
-}
-.section-area2 {
-  background: linear-gradient(rgb(17, 19, 42), rgb(17, 19, 42));
-}
-.section-area3 {
-  background: linear-gradient(rgb(17, 19, 42), rgb(25, 28, 64));
-}
-.section-area4 {
-  background: linear-gradient(rgb(25, 28, 64), rgb(25, 28, 64));
 } */
-
-.slide-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  top: 0;
-  padding-right: 5%;
-}
-
-.slide-navigation button:nth-child(1) {
-  display: none;
-}
-
-.slide-navigation button:nth-last-child(1) {
-  display: none;
-}
-
-.slide-navigation button {
-  background-color: white;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  margin: 10px 0;
-  font-size: 0px;
-  cursor: pointer;
-}
-
-.slide-navigation {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  bottom: 0px;
-}
-
-.slide-navigation button:disabled {
-  background-color: rgb(255, 217, 0);
-  position: relative;
-}
-/* fullpage 끝 */
+/* 스크롤바 끝 */
 
 /* fullpage custom 작업중
 body {

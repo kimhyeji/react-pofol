@@ -1,71 +1,26 @@
 import React from "react";
-import { gsap, TargetWithNames } from "gsap";
-
-import { Tween, Timeline } from "react-gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import vg1 from "../style/images/vg_1.jpg";
+import vg2 from "../style/images/vg_2.jpg";
+import vg3 from "../style/images/vg_3.jpg";
+import vg4 from "../style/images/vg_4.jpg";
 
 import "../style/Main.css";
 
-function LoremDiv() {
-  return (
-    <>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nam
-        laborum nisi natus obcaecati, quod deserunt modi error iure ex non.
-        Libero odio iure voluptate perferendis consectetur. Necessitatibus,
-        pariatur non! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Culpa, nam laborum nisi natus obcaecati, quod deserunt modi error iure
-        ex non. Libero odio iure voluptate perferendis consectetur.
-        Necessitatibus, pariatur non! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Culpa, nam laborum nisi natus obcaecati, quod deserunt
-        modi error iure ex non. Libero odio iure voluptate perferendis
-        consectetur. Necessitatibus, pariatur non! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Culpa, nam laborum nisi natus obcaecati,
-        quod deserunt modi error iure ex non. Libero odio iure voluptate
-        perferendis consectetur. Necessitatibus, pariatur non! Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Culpa, nam laborum nisi natus
-        obcaecati, quod deserunt modi error iure ex non. Libero odio iure
-        voluptate perferendis consectetur. Necessitatibus, pariatur non! Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Culpa, nam laborum
-        nisi natus obcaecati, quod deserunt modi error iure ex non. Libero odio
-        iure voluptate perferendis consectetur. Necessitatibus, pariatur non!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nam
-        laborum nisi natus obcaecati, quod deserunt modi error iure ex non.
-        Libero odio iure voluptate perferendis consectetur. Necessitatibus,
-        pariatur non!
-      </div>
-    </>
-  );
-}
-
 export default function Main() {
-  gsap.registerPlugin(ScrollTrigger);
   return (
     <>
-      <h1>Main</h1>
-      <LoremDiv />
-      <LoremDiv />
-      <div>
-        <Tween
-          to={{
-            x: "300px",
-            scrollTrigger: {
-              trigger: ".square",
-              start: "-200px center",
-              end: "200px center",
-              scrub: 0.5,
-              markers: true,
-            },
-          }}
-        >
-          <div
-            className="square"
-            style={{ width: "100px", height: "100px", background: "#ccc" }}
-          />
-        </Tween>
+      <div className="flex ani_bg_p">
+        <div className="animated_bg animated_bg_1"></div>
+        <div className="animated_bg animated_bg_2"></div>
       </div>
-      <LoremDiv />
-      <LoremDiv />
+
+      <div className="main_text-bg">
+        <span>
+          KIM HYE JI
+          <br />
+          PORTFOLIO
+        </span>
+      </div>
     </>
   );
 }
