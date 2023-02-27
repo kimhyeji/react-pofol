@@ -47,7 +47,7 @@
 }
 
 .slide-navigation button:disabled {
-  background-color: rgb(255, 217, 0);
+  background-color: var(--main-point-color);
   position: relative;
 }
 /* fullpage 끝 */

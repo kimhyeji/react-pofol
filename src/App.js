@@ -11,7 +11,7 @@ import "./style/App.css";
 export default function App() {
   return (
     <>
-      <FullPage
+      {/* <FullPage
         scrollMode={"full-page"}
         controls
         controlsProps={{ className: "slide-navigation" }}
@@ -25,12 +25,13 @@ export default function App() {
         <Slide className="">
           <AboutMe className="bs_line" />
         </Slide>
-      </FullPage>
+      </FullPage> */}
 
-      {/* <NavLink to="/main">Main</NavLink>
+      <NavLink to="/main">Main</NavLink>
       <NavLink to="/aboutMe">AboutMe</NavLink>
       <NavLink to="/project">Project</NavLink>
-      <div className="bs_line" />
+
+      {/* <div className="bs_line" /> */}
 
       <Routes>
         <Route path="/gsapEx" element={<GsapEx />} />
@@ -38,7 +39,7 @@ export default function App() {
         <Route path="/main" element={<Main />} />
         <Route path="/project" element={<Project />} />
         <Route path="*" element={<Navigate to="/main" />} />
-      </Routes> */}
+      </Routes>
     </>
   );
 }

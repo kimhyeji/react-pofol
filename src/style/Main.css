@@ -26,7 +26,7 @@
 }
 
 .animated_bg_2 {
-  background: url("../style/images/vg_2.jpg");
+  background: url("../style/images/vg_3.jpg");
   background-size: contain;
   animation: animatedBackground2 400s linear infinite;
 }
@@ -46,12 +46,45 @@
   font-size: 128px;
   font-family: "ClimateCrisisKRVF";
   line-height: 130px;
-  border: 10px solid red;
+  width: 1400px;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 
-.main_text-bg > span {
+.main_text-bg > div {
   position: absolute;
   bottom: 0;
+  right: 0;
+}
+
+.main_text-bg > div:nth-child(1) {
+  position: absolute;
+  bottom: 130px;
+  right: 0;
+}
+
+.main_text-bg > div > span {
+  color: var(--main-point-color);
 }
 /* 메인 텍스트 끝 */
+
+/* 메인 라인 시작 */
+.line_w {
+  position: absolute;
+  bottom: 0;
+  right: 261px;
+  width: 4px;
+  height: 322px;
+  background-color: var(--main-text-color);
+}
+
+.line_y {
+  position: absolute;
+  bottom: 147px;
+  width: 660px;
+  height: 4px;
+  background-color: var(--main-point-color);
+}
+/* 메인 라인 끝 */

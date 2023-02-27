@@ -15,12 +15,16 @@ export default function Main() {
       </div>
 
       <div className="main_text-bg">
-        <span>
-          KIM HYE JI
-          <br />
-          PORTFOLIO
-        </span>
+        <div>
+          KIM<span>HYE</span>JI
+        </div>
+        <div>
+          <span>PO</span>RTF<span>O</span>LIO
+        </div>
       </div>
+
+      <div className="line_y" />
+      <div className="line_w" />
     </>
   );
 }
