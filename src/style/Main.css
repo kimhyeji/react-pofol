@@ -26,7 +26,7 @@
 }
 
 .animated_bg_2 {
-  background: url("../style/images/vg_10.jpg");
+  background: url("../style/images/vg_3.jpg");
   background-size: contain;
   animation: animatedBackground2 400s linear infinite;
 }
@@ -44,7 +44,8 @@
 /* 메인 텍스트 시작 */
 .main_text-bg {
   font-size: 128px;
-  font-family: "ClimateCrisisKRVF";
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
   line-height: 130px;
   width: 1400px;
   height: 90vh;
@@ -74,16 +75,16 @@
 .line_w {
   position: absolute;
   bottom: 0;
-  right: 261px;
+  right: 265px;
   width: 4px;
-  height: 322px;
+  height: 318px;
   background-color: var(--main-text-color);
 }
 
 .line_y {
   position: absolute;
-  bottom: 147px;
-  width: 660px;
+  bottom: 139px;
+  width: 1080px;
   height: 4px;
   background-color: var(--main-point-color);
 }

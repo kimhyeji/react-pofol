@@ -7,10 +7,12 @@ import Project from "../pages/Project";
 import GsapEx from "./GsapEx";
 
 import "../style/App.css";
+import Header from "./Header";
 
 export default function App() {
   return (
     <>
+      <Header />
       {/* <FullPage
         scrollMode={"full-page"}
         controls

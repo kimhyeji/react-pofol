@@ -1,0 +1,37 @@
+.he_wrap {
+  height: 112px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  padding-top: 18px;
+  border: 3px solid white;
+  justify-content: space-between;
+}
+
+/* 로고 시작 */
+.logo_wrap {
+  height: 100%;
+  width: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_wrap > a {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.logo_wrap > a > span {
+  color: var(--main-point-color);
+}
+/* 로고 끝 */
+
+/* 메뉴 시작 */
+.menu_wrap {
+  height: 100%;
+  width: 168px;
+}
+
+/* 메뉴 끝 */

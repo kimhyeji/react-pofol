@@ -25,7 +25,7 @@ body,
 #root {
   height: 100%;
   margin: 0;
-  --main-text-color: rgb(236, 230, 211);
+  --main-text-color: #ece6d3;
   --main-point-color: #ffd900;
 }
 
