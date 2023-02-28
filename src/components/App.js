@@ -1,12 +1,12 @@
 import { Routes, Route, Navigate, NavLink } from "react-router-dom";
 import { FullPage, Slide } from "react-full-page";
 
-import AboutMe from "./pages/AboutMe";
-import Main from "./pages/Main";
-import Project from "./pages/Project";
+import AboutMe from "../pages/AboutMe";
+import Main from "../pages/Main";
+import Project from "../pages/Project";
 import GsapEx from "./GsapEx";
 
-import "./style/App.css";
+import "../style/App.css";
 
 export default function App() {
   return (
