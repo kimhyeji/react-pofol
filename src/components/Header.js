@@ -13,8 +13,17 @@ export default function Header() {
         </div>
 
         <div className="menu_wrap bg-blue-500">
-          <div className="he_line_1" />
-          <div className="he_line_2" />
+          {/* <div className="button_wrap">
+            <span></span>
+            <span></span>
+          </div> */}
+          <input className="burger-check" type="checkbox" id="burger-check" />
+          <label className="burger-icon" for="burger-check">
+            <span className="burger-sticks"></span>
+          </label>
+          <div className="menu">
+            <div style={{ width: "200px;" }}></div>
+          </div>
         </div>
       </div>
     </>

@@ -28,10 +28,92 @@
 }
 /* 로고 끝 */
 
-/* 메뉴 시작 */
+/* 메뉴 버튼 시작 */
 .menu_wrap {
   height: 100%;
   width: 168px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 메뉴 끝 */
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 0;
+  transition: 0.5s ease;
+  z-index: 1;
+  background-color: #eee;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  padding: 8px 0;
+  top: 4px;
+  right: 4px;
+  user-select: none;
+  width: auto;
+  margin: 0;
+  outline: 1px solid red;
+}
+
+.burger-icon .burger-sticks {
+  background: #333;
+  display: block;
+  height: 4px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 45px;
+}
+
+.burger-icon .burger-sticks:before,
+.burger-icon .burger-sticks:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.burger-icon .burger-sticks:before {
+  top: 5px;
+}
+
+.burger-icon .burger-sticks:after {
+  top: -5px;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .menu {
+  max-width: 200px;
+}
+
+.burger-check:checked ~ .burger-icon .burger-sticks {
+  background: transparent;
+}
+
+.burger-check:checked ~ .burger-icon .burger-sticks:before {
+  transform: rotate(-45deg);
+}
+
+.burger-check:checked ~ .burger-icon .burger-sticks:after {
+  transform: rotate(45deg);
+}
+
+.burger-check:checked ~ .burger-icon:not(.steps) .burger-sticks:before,
+.burger-check:checked ~ .burger-icon:not(.steps) .burger-sticks:after {
+  top: 0;
+}
+
+/* 메뉴 버튼 끝 */
