@@ -1,7 +1,14 @@
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../style/Header.css";
 
 export default function Header() {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = (event) => {
+    event.currentTarget.classList.toggle("active");
+  };
+
   return (
     <>
       <div className="he_wrap">
@@ -13,8 +20,8 @@ export default function Header() {
         </div>
 
         <div className="he_content_wrap menu_wrap">
-          <div className="button_wrap">
-            <span></span>
+          <div onClick={handleClick} className="button_wrap">
+            <span className="bar"></span>
           </div>
         </div>
       </div>
