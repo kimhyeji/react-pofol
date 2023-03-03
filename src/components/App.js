@@ -29,9 +29,9 @@ export default function App() {
         </Slide>
       </FullPage> */}
 
-      <NavLink to="/main">Main</NavLink>
+      {/* <NavLink to="/main">Main</NavLink>
       <NavLink to="/aboutMe">AboutMe</NavLink>
-      <NavLink to="/project">Project</NavLink>
+      <NavLink to="/project">Project</NavLink> */}
 
       {/* <div className="bs_line" /> */}
 

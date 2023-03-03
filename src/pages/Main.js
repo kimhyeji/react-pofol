@@ -77,7 +77,7 @@ export default function Main() {
         <div className="animated_bg animated_bg_2"></div>
       </div> */}
 
-      <div className="main_text-bg">
+      {/* <div className="main_text-bg">
         <div>
           KIM<span>HYE</span>JI
         </div>
@@ -87,7 +87,7 @@ export default function Main() {
       </div>
 
       <div className="line_y" />
-      <div className="line_w" />
+      <div className="line_w" /> */}
     </>
   );
 }
