@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import greensocklogo from "../style/images/eximg.jpg";
+import greensocklogo from "../style/images/vg_1.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

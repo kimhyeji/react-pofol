@@ -5,15 +5,15 @@ import {
   useTransition,
   useSpring,
 } from "@react-spring/web";
-import vg1 from "../style/images/vg_1.jpg";
-import vg2 from "../style/images/vg_2.jpg";
-import vg3 from "../style/images/vg_3.jpg";
+import vg22 from "../style/images/vg_22.jpg";
+import vg25 from "../style/images/vg_25.jpg";
+import vg26 from "../style/images/vg_26.jpg";
 import vg4 from "../style/images/vg_4.jpg";
 
 import styles from "../style/Main.css";
 import "../style/Main.css";
 
-const IMAGES = [vg1, vg2, vg3];
+const IMAGES = [vg22, vg25, vg26];
 
 export default function Main() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,7 +36,7 @@ export default function Main() {
     },
     exitBeforeEnter: true,
     config: {
-      duration: 4000,
+      duration: 3000,
     },
     delay: 1000,
     ref: springApi,
@@ -50,7 +50,7 @@ export default function Main() {
       strokeDashoffset: 0,
     },
     config: {
-      duration: 11000,
+      duration: 1000,
     },
     loop: true,
     ref: springApi,
@@ -62,22 +62,7 @@ export default function Main() {
 
   return (
     <>
-      {/* <div className={styles.container}>
-        <div className={styles.container__inner}>
-          {transitions((springs, item) => (
-            <animated.div className={styles.img__container} style={springs}>
-              <img src={IMAGES[item]} />
-            </animated.div>
-          ))}
-        </div>
-      </div> */}
-
-      {/* <div className="flex ani_bg_p">
-        <div className="animated_bg animated_bg_1"></div>
-        <div className="animated_bg animated_bg_2"></div>
-      </div> */}
-
-      {/* <div className="main_text-bg">
+      <div className="main_text-bg">
         <div>
           KIM<span>HYE</span>JI
         </div>
@@ -87,7 +72,22 @@ export default function Main() {
       </div>
 
       <div className="line_y" />
-      <div className="line_w" /> */}
+      <div className="line_w" />
+
+      <div className="container">
+        <div className="container__inner">
+          {transitions((springs, item) => (
+            <animated.div className="img__container" style={springs}>
+              <img src={IMAGES[item]} />
+            </animated.div>
+          ))}
+        </div>
+      </div>
+
+      {/* <div className="flex ani_bg_p">
+        <div className="animated_bg animated_bg_1"></div>
+        <div className="animated_bg animated_bg_2"></div>
+      </div> */}
     </>
   );
 }

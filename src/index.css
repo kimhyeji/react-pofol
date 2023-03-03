@@ -43,7 +43,7 @@ html > body button {
 }
 
 /* 스크롤바 시작 */
-/* :root {
+:root {
   overflow-y: overlay;
 }
 
@@ -56,7 +56,7 @@ html > body button {
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-} */
+}
 /* 스크롤바 끝 */
 
 /* fullpage custom 작업중

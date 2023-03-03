@@ -75,16 +75,16 @@
 .line_w {
   position: absolute;
   bottom: 0;
-  right: 265px;
+  right: 372px;
   width: 4px;
-  height: 318px;
+  height: 350px;
   background-color: var(--main-text-color);
 }
 
 .line_y {
   position: absolute;
-  bottom: 139px;
-  width: 1080px;
+  bottom: 170px;
+  width: 1180px;
   height: 4px;
   background-color: var(--main-point-color);
 }
@@ -93,18 +93,19 @@
 /* react-spring animation 시작 */
 .container {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  width: 1080px;
+  height: 100vh;
+  z-index: -10;
+  opacity: 0.7;
 }
 
 .container__inner {
   position: absolute;
   overflow: hidden;
   position: relative;
-  width: 80vw;
+  width: 1080px;
+  z-index: -10;
 }
 
 .container__inner::before {
@@ -112,7 +113,6 @@
   content: "";
   width: 100%;
   padding-top: 56.25%;
-  outline: 10px solid red;
 }
 
 .img__container {
@@ -121,13 +121,12 @@
   top: 0;
   width: 100%;
   height: 100%;
-  outline: 10px solid red;
   position: absolute;
 }
 
 .img__container > img {
   min-width: 100%;
-  max-width: 100%;
-  outline: 10px solid red;
+  max-width: 1080px;
   position: absolute;
+  z-index: -10;
 }
