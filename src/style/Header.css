@@ -21,6 +21,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 30px;
+  user-select: none;
 }
 
 .logo_wrap > a > span {
@@ -31,6 +32,7 @@
 /* 메뉴 버튼 시작 */
 .menu_wrap {
   position: relative;
+  user-select: none;
 }
 
 .button_wrap {

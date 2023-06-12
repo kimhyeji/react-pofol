@@ -27,16 +27,16 @@
 
 .animated_bg_2 {
   background: url("../style/images/vg_3.jpg");
+  animation: animatedBackground2 40s linear infinite;
   background-size: contain;
-  animation: animatedBackground2 400s linear infinite;
 }
 
 @keyframes animatedBackground2 {
   from {
-    background-position: 0 0;
+    background-position: 0 0, 0 -400px, 0 -700px;
   }
   to {
-    background-position: 0 10000px;
+    background-position: 0 3000px, 0 0, 0 500px;
   }
 }
 /* 흐르는 이미지 끝 */
@@ -70,25 +70,6 @@
   color: var(--main-point-color);
 }
 /* 메인 텍스트 끝 */
-
-/* 메인 라인 시작 */
-.line_w {
-  position: absolute;
-  bottom: 0;
-  right: 372px;
-  width: 4px;
-  height: 350px;
-  background-color: var(--main-text-color);
-}
-
-.line_y {
-  position: absolute;
-  bottom: 170px;
-  width: 1180px;
-  height: 4px;
-  background-color: var(--main-point-color);
-}
-/* 메인 라인 끝 */
 
 /* react-spring animation 시작 */
 .container {
