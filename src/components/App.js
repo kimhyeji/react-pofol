@@ -4,7 +4,6 @@ import { FullPage, Slide } from "react-full-page";
 import AboutMe from "../pages/AboutMe";
 import Main from "../pages/Main";
 import Project from "../pages/Project";
-import GsapEx from "./GsapEx";
 
 import "../style/App.css";
 import Header from "./Header";
@@ -36,7 +35,6 @@ export default function App() {
       {/* <div className="bs_line" /> */}
 
       <Routes>
-        <Route path="/gsapEx" element={<GsapEx />} />
         <Route path="/aboutMe" element={<AboutMe />} />
         <Route path="/main" element={<Main />} />
         <Route path="/project" element={<Project />} />

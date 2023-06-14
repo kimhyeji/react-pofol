@@ -27,7 +27,7 @@
 
 .animated_bg_2 {
   background: url("../style/images/vg_3.jpg");
-  animation: animatedBackground2 40s linear infinite;
+  animation: animatedBackground2 100s linear infinite;
   background-size: contain;
 }
 
