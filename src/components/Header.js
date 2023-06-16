@@ -81,23 +81,6 @@ export default function Header() {
         <div className="he_content_wrap menu_wrap">
           <div onClick={handleClick} className="button_wrap">
             <span className="bar"></span>
-            <div>
-              {["right"].map((anchor) => (
-                <React.Fragment key={anchor}>
-                  <Button
-                    className="right_button"
-                    onClick={toggleDrawer(anchor, true)}
-                  ></Button>
-                  <Drawer
-                    anchor={anchor}
-                    open={state[anchor]}
-                    onClose={toggleDrawer(anchor, false)}
-                  >
-                    {list(anchor)}
-                  </Drawer>
-                </React.Fragment>
-              ))}
-            </div>
           </div>
         </div>
       </div>

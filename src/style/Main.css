@@ -111,3 +111,21 @@
   position: absolute;
   z-index: -10;
 }
+
+/* 이미지 전환 시작 */
+.bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.871);
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+  z-index: -1;
+}
+
+/* 이미지 전환 끝 */
