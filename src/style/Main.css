@@ -42,7 +42,7 @@
 /* 흐르는 이미지 끝 */
 
 /* 메인 텍스트 시작 */
-.main_text-bg {
+.main_text_bg {
   font-size: 128px;
   font-family: "Inter", sans-serif;
   font-weight: 900;
@@ -52,21 +52,22 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  user-select: none;
 }
 
-.main_text-bg > div {
+.main_text_bg > div {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.main_text-bg > div:nth-child(1) {
+.main_text_bg > div:nth-child(1) {
   position: absolute;
   bottom: 130px;
   right: 0;
 }
 
-.main_text-bg > div > span {
+.main_text_bg > div > span {
   color: var(--main-point-color);
 }
 /* 메인 텍스트 끝 */
@@ -117,15 +118,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-75%) translateY(-50%);
   box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.871);
-  width: 70vw;
-  height: 70vh;
+  width: 55vw;
+  height: 80vh;
   position: absolute;
   background-size: cover;
   background-position: center;
   will-change: opacity;
   z-index: -1;
 }
-
 /* 이미지 전환 끝 */
