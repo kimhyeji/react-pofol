@@ -43,89 +43,88 @@
 
 /* 메인 텍스트 시작 */
 .main_text_bg {
-  font-size: 128px;
+  font-size: 70px;
   font-family: "Inter", sans-serif;
-  font-weight: 900;
-  line-height: 130px;
-  width: 1400px;
-  height: 90vh;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+  font-weight: 600;
+  width: 100%;
+  left: 0;
+  top: 25%;
+  position: absolute;
   user-select: none;
+  text-align: center;
 }
 
-.main_text_bg > div {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.main_text_bg > .main_text_wrap {
+  display: inline-block;
+  padding: 20px 30px;
+  opacity: 0.9;
 }
 
-.main_text_bg > div:nth-child(1) {
-  position: absolute;
-  bottom: 130px;
-  right: 0;
-}
-
-.main_text_bg > div > span {
+.main_text_bg > .main_text_wrap > span {
   color: var(--main-point-color);
+}
+
+.main_text_bg > .under_text {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.main_text_bg > .main_text_line {
+  width: 1.5px;
+  height: 52.2vh;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-text-color);
 }
 /* 메인 텍스트 끝 */
 
 /* react-spring animation 시작 */
-.container {
+
+.bg_img_box {
   position: absolute;
   top: 0;
-  width: 1080px;
+  left: 0;
+  width: 100%;
   height: 100vh;
-  z-index: -10;
+  background: url("../style/images/vg_15.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.7;
+  z-index: -2;
 }
 
-.container__inner {
-  position: absolute;
-  overflow: hidden;
-  position: relative;
-  width: 1080px;
-  z-index: -10;
-}
-
-.container__inner::before {
+.bg_img_box > img {
+  width: 100%;
   display: block;
-  content: "";
-  width: 100%;
-  padding-top: 56.25%;
-}
-
-.img__container {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.img__container > img {
-  min-width: 100%;
-  max-width: 1080px;
-  position: absolute;
-  z-index: -10;
 }
 
 /* 이미지 전환 시작 */
 .bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-75%) translateY(-50%);
   box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.871);
-  width: 55vw;
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
   position: absolute;
   background-size: cover;
   background-position: center;
   will-change: opacity;
-  z-index: -1;
+  z-index: -2;
+}
+
+.bg_content {
+  width: 1500px;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #000;
+  opacity: 0.7;
+  z-index: -2;
 }
 /* 이미지 전환 끝 */

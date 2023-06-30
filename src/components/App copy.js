@@ -12,6 +12,27 @@ export default function App() {
   return (
     <>
       <Header />
+      {/* <FullPage
+        scrollMode={"full-page"}
+        controls
+        controlsProps={{ className: "slide-navigation" }}
+      >
+        <Slide className="">
+          <Main className="bs_line" />
+        </Slide>
+        <Slide className="">
+          <Project className="bs_line" />
+        </Slide>
+        <Slide className="">
+          <AboutMe className="bs_line" />
+        </Slide>
+      </FullPage> */}
+
+      {/* <NavLink to="/main">Main</NavLink>
+      <NavLink to="/aboutMe">AboutMe</NavLink>
+      <NavLink to="/project">Project</NavLink> */}
+
+      {/* <div className="bs_line" /> */}
 
       <Routes>
         <Route path="/aboutMe" element={<AboutMe />} />

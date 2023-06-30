@@ -1,13 +1,9 @@
 export default function AboutMe() {
   return (
     <>
-      <h1>AboutMe</h1>
-      <h1>AboutMe</h1>
-      <h1>AboutMe</h1>
-      <h1>AboutMe</h1>
-      <h1>AboutMe</h1>
-      <h1>AboutMe</h1>
-      <h1>AboutMe</h1>
+      <div>
+        <h1>ABOUT ME</h1>
+      </div>
     </>
   );
 }
